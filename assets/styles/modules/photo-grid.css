@@ -1,0 +1,35 @@
+.photo-grid {
+  margin-top: 10%;
+  display: grid;
+  grid-gap: 150px;
+  padding: 0 20%;
+
+
+.row-1  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    overflow-y: hidden;
+
+  }
+
+.row-2  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    overflow-y: hidden;
+
+  }
+
+
+img:hover {
+  transform: scale(1.1);
+
+}
+
+img {
+transition: transform .5s ease-in-out;
+
+}
+
+}

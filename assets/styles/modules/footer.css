@@ -1,0 +1,120 @@
+.footer {
+  margin-top: 0;
+  color: #fff;
+  background: #335941;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 10px 2%;
+  text-align: center;
+  justify-items: center;
+  overflow-y: hidden;
+
+  @mixin atSmall {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px 5%;
+  }
+
+  @mixin atMedium {
+    padding: 30px 5%;
+    margin-top: 5%;
+  }
+
+  @mixin atLarge {
+    padding: 30px 10%;
+  }
+
+  @mixin atExtraLarge {
+    padding: 30px 10%;
+    padding-right: 300px;
+    padding-left: 300px;
+  }
+
+  &-search {
+    position: relative;
+    top: 15px;
+  }
+
+  .icons {
+    text-align: center;
+    font-size: 1.7rem;
+    position: relative;
+    /* padding: 20% 5%; */
+    display: block;
+    grid-gap: 10px;
+
+
+    @mixin atSmall {
+      display: grid;
+      padding: 5% 0;
+    }
+
+    @mixin atMedium {
+      font-size: 1.7rem;
+      padding: 25% 0;
+      display: block;
+    }
+  }
+
+  i {
+    padding: 0 20px;
+    transition: all .2s ease-in-out;
+    margin: 20px 0;
+
+    @mixin atMedium {
+      padding: 0 7px;
+      margin: 0 0;
+    }
+
+    @mixin atLarge {
+      padding: 0 15px;
+    }
+
+    @mixin atExtraLarge {
+      padding: 0 10px;
+    }
+  }
+
+  i:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, .4);
+    transform:scale(1.2);
+  }
+
+  h5 {
+    font-weight: 300;
+    font-size: 2rem;
+    padding: 20px 0;
+
+    @mixin atSmall {
+      font-size: 1.3rem;
+    }
+  }
+
+  h5:hover,
+  label:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, .4);
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 1.4rem;
+
+    @mixin atSmall {
+      font-size: .9rem;
+    }
+  }
+
+  p:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, .4);
+  }
+
+  .form-group {
+    font-size: 2rem;
+
+    @mixin atSmall {
+      font-size: 1.3rem;
+    }
+  }
+}

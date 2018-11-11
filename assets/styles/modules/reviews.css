@@ -1,0 +1,80 @@
+.reviews {
+  margin-top: 10%;
+  padding: 10% 0;
+  display: grid;
+  background: rgba(0,0,0,.1);
+
+  @mixin atSmall {
+    background: none;
+    margin-top: 0;
+    padding: 5% 0;
+  }
+
+ &-title {
+   font-size: 2.6rem;
+   text-align: center;
+ }
+
+  &-people {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+    padding: 0 15%;
+    opacity: 0;
+    transform: scaleX(.1);
+    transition: all 1s ease-in-out;
+
+    @mixin atMedium {
+      margin-top: 50px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      padding: 0 5%;
+    }
+
+    @mixin atLarge {
+      grid-gap: 100px;
+      padding: 0 20%;
+    }
+
+    h2 {
+      text-align: center;
+      padding: 15px 0;
+      font-size: 1.6rem;
+
+      @mixin atMedium {
+        font-size: 2rem;
+      }
+    }
+
+    p {
+      letter-spacing: .1rem;
+      text-align: center;
+    }
+  }
+
+  .stars {
+    position: relative;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 7%;
+  }
+
+  .peter,
+  .sue,
+  .carl {
+
+  }
+
+  .person {
+    border-radius: 25px 100px 25px;
+    transition: all .3s ease-in-out;
+  }
+
+  .person:hover {
+    cursor: pointer;
+    opacity: .5;
+  }
+
+}

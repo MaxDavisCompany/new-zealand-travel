@@ -1,0 +1,44 @@
+.large-hero-icons {
+  position: absolute;
+  z-index: 5;
+  font-size: 2.4rem;
+  color: #fff;
+  overflow-y: hidden;
+  visibility: hidden;
+
+  @mixin atSmall {
+   visibility: visible;
+   top: 65%;
+   right: 50%;
+   transform: translateX(50%);
+  }
+
+  @mixin atMedium {
+    top: 80%;
+  }
+
+  @mixin atLarge {
+    display: grid;
+    grid-gap: 50px;
+    justify-items: center;
+    top: 30%;
+    right: 20%;
+  }
+
+  i {
+    transition: all .1s ease-in-out;
+    opacity: .7;
+    padding: 0 10px;
+
+    @mixin atMedium {
+      padding: 0 20px;
+    }
+  }
+
+  i:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: .9;
+
+  }
+}

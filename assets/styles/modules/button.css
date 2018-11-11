@@ -1,0 +1,24 @@
+.button {
+  background: #A6423E;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 10px;
+  transition: all .2s ease-in-out;
+
+  @mixin atMedium {
+  font-size: 1.2rem;
+  }
+}
+
+.button:hover {
+  cursor: pointer;
+  background: rgba(221,221,221,.8);
+  color: black;
+}
+
+
+
+h5 {
+
+}

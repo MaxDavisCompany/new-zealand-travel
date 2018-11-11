@@ -1,0 +1,16 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background: #ebebeb;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  overflow-x: hidden;
+  /* scroll-behavior: smooth; */
+}
